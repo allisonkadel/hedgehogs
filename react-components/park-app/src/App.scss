@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Special Elite', cursive;
+}
+
+::-webkit-scrollbar {
+     display: none;
+}
+
+.welcome-msg {
+     font-size: 2.5rem;
+     text-align: center;
+     height: 10vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 40px;
+}
+
+.form-and-res-cont {
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     justify-content: space-between;
+     height: 70vh;
+     padding: 50px 150px 0 150px;
+
+     .form {
+          width: 325px;
+          text-align: center;
+          font-size: 1.2rem;
+          padding: 50px;
+
+          h2 {
+               margin-bottom: 25px;
+               letter-spacing: 2px;
+          }
+     
+          input {
+               display: inline-block;
+               width: 100%;
+               margin-top: 5px;
+               height: 45px;
+               outline: none;
+               padding-left: 5px;
+               font-size: 1rem;
+               font-family: 'Special Elite',
+               cursive;
+               margin-bottom: 20px;
+               border-radius: 5px;
+               border: 1px solid #d3d3d3;
+               text-align: center;
+               letter-spacing: 2px;
+          }
+     
+          .sub-btn {
+               height: 50px;
+               width: 100%;
+               cursor: pointer;
+               border: none;
+               background-color: #3b3b3b;
+               color: #fff;
+               border-radius: 5px;
+               outline: none;
+               font-size: 1.1rem;
+               letter-spacing: 2px;
+
+               &:hover {
+                    background-color: #000;
+                    transition: background-color .2s;
+               }
+          }
+     }
+
+     .res-area {
+          overflow-y: scroll;
+          max-height: 400px;
+          .reservation-item {
+               font-size: 1.5rem;
+               margin-bottom: 20px;
+          }
+     }
+}
+
